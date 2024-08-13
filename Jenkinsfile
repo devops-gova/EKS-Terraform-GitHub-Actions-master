@@ -17,7 +17,7 @@ pipeline {
                 sh 'echo Preparing'
             }
         }
-        stage('Git Pulling') {
+        stage('Git Pull') {
             steps {
                 git branch: 'master', url: 'https://github.com/johngova/EKS-Terraform-GitHub-Actions.git'
             }
