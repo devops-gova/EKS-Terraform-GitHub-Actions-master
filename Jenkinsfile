@@ -14,10 +14,10 @@ pipeline {
     stages {
         stage('Preparing') {
             steps {
-                sh 'echo Preparing'
+                sh 'echo Prepare'
             }
         }
-        stage('Git Pull') {
+        stage('Git Pulling') {
             steps {
                 git branch: 'master', url: 'https://github.com/johngova/EKS-Terraform-GitHub-Actions.git'
             }
